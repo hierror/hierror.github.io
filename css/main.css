@@ -1,18 +1,18 @@
 body {
+    font-family: 'Lato', sans-serif;
     font-size: 16px;
     color: #000;
 }
 #logo {
-    font-size: 3em;
+    font-size: 2em;
     font-family: 'Cabin Sketch', cursive;
-    margin: 0 10px;
+    margin: 0 20px;
 }
 #info-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 12vh;
-    border-bottom: 1px solid #000;
 }
 #sm-list {
     margin-right: 20px;
@@ -22,5 +22,28 @@ body {
     margin: 10px;
 }
 .sm-item > a > img {
-    width: 5vh;
+    width: 4vh;
+}
+#content-nav {
+  text-align: center;
+  width: 100vw;
+}
+.content-item {
+  position: relative;
+  display: inline-block;
+  padding: 20px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+.content-item::after {
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #000;
+  content: "";
+  transition: all .9s;
+}
+.content-item:hover::after {
+  width: 100%;
+  transition: all .3s;
 }
