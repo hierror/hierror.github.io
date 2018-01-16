@@ -1,0 +1,26 @@
+body {
+    font-size: 16px;
+    color: #000;
+}
+#logo {
+    font-size: 3em;
+    font-family: 'Cabin Sketch', cursive;
+    margin: 0 10px;
+}
+#info-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 12vh;
+    border-bottom: 1px solid #000;
+}
+#sm-list {
+    margin-right: 20px;
+}
+.sm-item {
+    display: inline-block;
+    margin: 10px;
+}
+.sm-item > a > img {
+    width: 5vh;
+}
