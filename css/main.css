@@ -2,17 +2,27 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     color: #000;
+    padding-top: 15vh;
 }
 #logo {
+    font-family: 'Righteous', cursive;
     font-size: 2em;
-    font-family: 'Cabin Sketch', cursive;
+    text-transform: uppercase;
     margin: 0 20px;
+}
+#logo > a > span {
+    color: #bd0000;
 }
 #info-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
     height: 12vh;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 }
 #sm-list {
     margin-right: 20px;
@@ -23,10 +33,6 @@ body {
 }
 .sm-item > a > img {
     width: 4vh;
-}
-#content-nav {
-  text-align: center;
-  width: 100vw;
 }
 .content-item {
   position: relative;
@@ -39,7 +45,7 @@ body {
   display: block;
   width: 0%;
   height: 2px;
-  background-color: #000;
+  background-color: #bd0000;
   content: "";
   transition: all .9s;
 }
