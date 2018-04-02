@@ -1,0 +1,43 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+header {
+    height: 100vh;
+    padding: 10vh 20vmax 0;
+    box-sizing: content-box
+}
+header > p {
+    text-align: center;
+}
+header > .myself {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 15%;
+}
+section {
+    margin-top: 10vh;
+}
+h1 {
+    font-size: 82px;
+    color: #222;
+}
+.surname {
+    display: block;
+    padding-left: 10vmin;
+}
+.social-media {
+    position: absolute;
+    top: 0;
+    right: 5vmin;;
+    list-style: none;
+}
+.social-media-item {
+    display: inline-block;
+    margin: 5px 15px;
+    filter: invert(100%);
+}
+.social-media-item:hover {
+    transform: scale(1.1);
+}
