@@ -2,8 +2,12 @@ body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
 }
+ul {
+    padding: 0; 
+    list-style: none;
+}
 header {
-    height: 100vh;
+    height: 60vh;
     padding: 10vh 20vmax 0;
     box-sizing: content-box
 }
@@ -23,15 +27,51 @@ h1 {
     font-size: 82px;
     color: #222;
 }
+nav {
+    margin-top: 10px;
+}
+.navbar-list {
+    display: flex;
+    justify-content: center
+}
+.navbar-list-item {
+    display: inline-block;
+    color: #ddd;
+    font-size: 14px;
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+
+.navbar-list-item > a {
+    text-decoration: none;
+}
+
+.navbar-list-item > a:visited {
+    color: #4c4c4c;
+}
+.navbar-list-item > a:hover {
+    color: #000;
+}
+.navbar-list-item > a::after {
+    content: "";
+    display: block;
+    background-color: #424242;
+    height: 1px;
+    width: 0;
+    transition: 200ms ease all;
+}
+.navbar-list-item:hover > a::after {
+    width: 100%;
+}
 .surname {
     display: block;
+    margin: -20px;
     padding-left: 10vmin;
 }
 .social-media {
     position: absolute;
     top: 0;
-    right: 5vmin;;
-    list-style: none;
+    right: 5vmin;
 }
 .social-media-item {
     display: inline-block;
@@ -40,4 +80,11 @@ h1 {
 }
 .social-media-item:hover {
     transform: scale(1.1);
+}
+.cool-sentence {
+    display: inline-block;
+    width: 80%;
+    margin: 0 10%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
 }
